@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Мельникова Анастасия Михайловна. Лабораторная работа 3.</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Like</h2>
+            <button id="like-button" class="like-button" aria-label="Like"><img src="img/like-svgrepo-com.svg"
+                    alt="like button"></button>
+        </section>
+        <section>
+            <h2>Like / Dislike</h2>
+            <button id="like-button1" class="like-button1" aria-label="Like"><img
+                    src="img/like-svgrepo-com.svg"></button>
+            <button id="dislike-button" class="dislike-button" aria-label="Dislike"><img
+                    src="img/broken-heart-svgrepo-com.svg"></button>
+        </section>
+        <section>
+            <h2 class="h2_basket">Basket</h2>
+            <div id="card-button" class="container">
+                <button id="basket-button" class="basket-button" aria-label="Basket"><img src="img/cart-svgrepo-com.svg"
+                        alt="basket button"></button>
+                <div class="product-card">
+                    <img src="img/berry.jpg" alt="Product image">
+                    <h3 class="text">Клубника 300гр</h3>
+                    <span class="price">400 рублей</span>
+                    <button id="add-to-cart" class="add-to-cart">Добавить в корзину</button>
+                    <span id="count" class="cart-count">0</span>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="list">
+                <p id="number" class="number"></p>
+                <button id="sort-inc" class="sort-inc" aria-label="">Сортировать по возрастанию</button>
+                <button id="sort-dec" class="sort-dec" aria-label="">Сортировать по убыванию</button>
+                <button id="reset" class="reset" aria-label="">Сбосить</button>
+            </div>
+        </section>
+        <div id="container">
+            <h2>Координаты нажатия</h2>
+            <p class="coordinates" id="coordinates"></p>
+        </div>
+
+
+    </main>
+    <footer></footer>
+    <script src="lab3.js"></script>
+</body>
+
+</html>
