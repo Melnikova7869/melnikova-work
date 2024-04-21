@@ -1,0 +1,286 @@
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/mukta-v14-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* mukta-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/mukta-v14-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* mukta-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/mukta-v14-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    --primary-color: pink;
+    --second-color: green;
+    --holl-collor: black;
+    --k-color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.wrapper h1 {
+    display: flex;
+    justify-content: baseline;
+}
+
+span {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Mukta", sans-serif;
+}
+
+body {
+    background-color: #0A1117;
+}
+
+
+.div_a1 {
+    display: block;
+    width: 100%;
+    max-width: 214px;
+    max-height: 70px;
+    margin: 40px auto;
+    padding: 10px 2px;
+    border: 2px;
+    border-radius: 6px;
+    background-position: center;
+    background-color: #FFCF01;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px 15px;
+    color: #18191c;
+    transform: translateY(-100%);
+}
+
+.skip-link:focus {
+    transform: translateY(20%);
+}
+
+.header .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 30px;
+}
+
+.header__navigation {
+    width: 500px;
+    height: 24px;
+}
+
+.navigation__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.navigation__link {
+    font-size: 1.8rem;
+}
+
+.navigation__link:visited {
+    color: white;
+}
+
+.navigation__link:focus {
+    color: #dcbef4;
+}
+
+.navigation__link:hover {
+    color: yellow;
+}
+
+.navigation__link:active {
+    color: #dcbef4;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo__image {
+    width: 190px;
+}
+
+p {
+    color: var(--k-color)
+}
+
+
+.header__login {
+    width: 59px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 7px 5px;
+    border: 2px;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    background-position: center;
+    background-color: #243241;
+}
+
+a {
+    color: var(--k-color);
+    text-decoration: none;
+}
+
+.header__login:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 10px 5px rgba(44, 42, 42, 0.5);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.header__btn {
+    display: none;
+}
+
+h2 {
+    color: var(--k-color);
+    font-size: 4rem;
+}
+
+.forms {
+    padding: 10px;
+}
+
+dialog {
+    margin: auto auto;
+    width: 600px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    background-color: #243241;
+}
+
+ul {
+    list-style: none;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form li {
+    margin-top: 1em;
+    font-size: 1.5rem;
+}
+
+/* label {
+    display: inline-block;
+    padding: 2px 5px;
+    text-align: right;
+    cursor: pointer;
+}
+ */
+
+button {
+    font-size: 1.2rem;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 6px;
+
+}
+
+input:focus-within {
+    outline: white 2px solid;
+}
+
+.flex_ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.exit {
+    margin-left: 520px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+form span {
+    font-size: 2rem;
+    color: white;
+    padding: 0 10px;
+}
+
+form button {
+    font-size: 1.3rem;
+    padding: 7px;
+}
+
+input:user-invalid {
+    border: 2px solid red;
+}
+
+input:user-valid {
+    border: 2px solid greenyellow;
+}
+
+.error {
+    font-size: 1.3rem;
+    margin: 10px;
+}

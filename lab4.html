@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <a class="skip-link" href="#main">
+            Перейти к контенту
+        </a>
+        <div class="wrapper">
+            <a href="#" class="header__logo logo"><img src="img/logo.svg" alt="логотип" class="logo__image"></a>
+            <nav class="header__navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">Product</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Use cases</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Learn</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+                </ul>
+            </nav>
+            <button class="header__login" id="open-modal">Login</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="wrapper">
+                <dialog id="modal" class="forms">
+                    <button id="exit" class="exit"><img src="img/cross-small-svgrepo-com.svg" alt="выход"></button>
+                    <form action="//httpbin.org/post" method="post" novalidate>
+                        <label for="name">
+                            <span>Name:</span>
+                            <input type="text" placeholder="Name" id="name" name="user_name" required
+                                pattern="[A-Za-z]{2,20}" />
+                        </label>
+                        <label for="birthdate">
+                            <span>Birthdate:</span>
+                            <input type="date" id="birthdate" required />
+                        </label>
+                        <label for="mail">
+                            <span>Email:</span>
+                            <input type="email" placeholder="Email" id="mail" name="user_email" required />
+                        </label>
+                        <div>
+                            <label for="pwd">
+                                <span>Password: </span>
+                                <input type="password" id="pwd" name="password" placeholder="Password" required
+                                    minlength="6" aria-describedby="pattern" />
+                            </label>
+                            <button type="button" id="show-password">Show password</button>
+                            <p class="error" id="error" hidden>Error</p>
+                        </div>
+                        <ul class="flex_ul">
+                            <li class="button">
+                                <button type="reset">Reset</button>
+                            </li>
+                            <li class="button">
+                                <button type="submit">To send</button>
+                            </li>
+                        </ul>
+                    </form>
+                </dialog>
+            </div>
+        </section>
+    </main>
+    <script src="lab4.js"></script>
+</body>
+
+</html>
